@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lugares</string>
+    <string name="emailTv">Correo</string>
+    <string name="passTv">Contraseña</string>
+</resources>
