@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20"
-    tools:context=".MainActivity" >
+    android:padding="40px"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/emailTv"
