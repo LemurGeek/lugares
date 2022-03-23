@@ -5,59 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40px"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/emailTv"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/emailTv"
+        android:text="@string/tv_correo"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/emailEt"
+        android:id="@+id/et_correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <TextView
-        android:id="@+id/passTv"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/passTv"
+        android:text="@string/tv_clave"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <EditText
-        android:id="@+id/passEt"
+        android:id="@+id/et_clave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/msg_clave"
         android:ems="10"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textSize="34sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/registerBtn"
+            android:id="@+id/bt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_register_24" />
+            android:contentDescription="@string/msg_btRegister"
+            app:srcCompat="@drawable/ic_register" />
 
         <ImageButton
-            android:id="@+id/loginBtn"
+            android:id="@+id/bt_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_baseline_login_24" />
+            android:contentDescription="@string/msg_btLogin"
+            app:srcCompat="@drawable/ic_login" />
     </LinearLayout>
 </LinearLayout>

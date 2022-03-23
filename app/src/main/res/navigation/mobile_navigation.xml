@@ -3,23 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_lugar">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.myapplication.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_lugar"
+        android:name="com.lugares.ui.lugar.LugarFragment"
+        android:label="@string/menu_lugar"
+        tools:layout="@layout/fragment_lugar" >
+        <action
+            android:id="@+id/action_nav_lugar_to_addLugarFragment"
+            app:destination="@id/nav_addLugar" />
+        <action
+            android:id="@+id/action_nav_lugar_to_nav_updateLugar"
+            app:destination="@id/nav_updateLugar" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.myapplication.ui.gallery.GalleryFragment"
+        android:name="com.lugares.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
+        android:name="com.lugares.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_addLugar"
+        android:name="com.lugares.ui.lugar.AddLugarFragment"
+        android:label="@string/bt_add_lugar"
+        tools:layout="@layout/fragment_add_lugar">
+        <action
+            android:id="@+id/action_addLugarFragment_to_nav_lugar"
+            app:destination="@id/nav_lugar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_updateLugar"
+        android:name="com.lugares.ui.lugar.UpdateLugarFragment"
+        android:label="@string/bt_update_lugar"
+        tools:layout="@layout/fragment_update_lugar" >
+        <action
+            android:id="@+id/action_nav_updateLugar_to_nav_lugar"
+            app:destination="@id/nav_lugar" />
+        <argument
+            android:name="lugar"
+            app:argType="com.lugares.model.Lugar" />
+    </fragment>
 </navigation>

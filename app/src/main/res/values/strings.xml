@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Lugares</string>
-    <string name="emailTv">Correo</string>
-    <string name="passTv">Contraseña</string>
+    <string name="tv_correo">Correo</string>
+    <string name="tv_clave">Contraseña</string>
+    <string name="msg_correo">Campo para ingresar su correo</string>
+    <string name="msg_clave">Campo para ingresar su contraseña</string>
+    <string name="msg_btLogin">Boton para hacer login al App</string>
+    <string name="msg_btRegister">Boton para registrarse en el App</string>
+    <string name="msg_fallo_registro">Falló el registro del usuario</string>
+    <string name="msg_fallo_login">Falló el login del usuario</string>
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,7 +16,40 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_lugar">Lugares</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_nombre_add">Nombre del lugar</string>
+    <string name="msg_correo_add">Correo del lugar</string>
+    <string name="msg_telefono_add">Teléfono del lugar</string>
+    <string name="msg_web_add">Sitio WEB del lugar</string>
+    <string name="msg_lugar_add">Lugar agregado</string>
+    <string name="msg_lugar_update">Lugar actualizado</string>
+    <string name="msg_lugar_delete">Lugar eliminado</string>
+
+    <string name="bt_add_lugar">Agregar Lugar</string>
+    <string name="bt_update_lugar">Actualizar Lugar</string>
+    <string name="menu_delete">Eliminar Lugar</string>
+    <string name="msg_seguroBorrar">"¿Está seguro de eliminar "</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
+
+    <string name="msg_enviar_correo">Enviar correo electrónico</string>
+    <string name="msg_phone_call">Realizar llamada telefónica</string>
+    <string name="msg_whatsapp_send">Enviar mensaje WhatsApp</string>
+    <string name="msg_web_view">Abrir sitio Web</string>
+    <string name="msg_map_view">Ver lugar en mapa</string>
+    <string name="tv_latitud_lb">Latitud</string>
+    <string name="tv_longitud_lb">Longitud</string>
+    <string name="tv_altura_lb">Altura</string>
+    <string name="msg_saludos">Saludos amigos</string>
+    <string name="msg_mensaje_correo">Le escribo este correo para</string>
+    <string name="msg_datos">Faltan datos</string>
+    <string name="error">Error</string>
+
+
+
 </resources>
