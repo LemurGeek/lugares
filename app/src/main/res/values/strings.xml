@@ -66,4 +66,6 @@
     <string name="msg_subiendo_imagen">Subiendo imagen</string>
     <string name="todo">TODO</string>
 
+    <string name="default_web_client_id_r"
+        translatable="false">899406502774-6516ncln6rurd24cfj66kambeoafmiqr.apps.googleusercontent.com</string>
 </resources>
