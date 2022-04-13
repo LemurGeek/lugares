@@ -82,4 +82,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage-ktx'
 
     implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    // Para generar el mapa
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
 }

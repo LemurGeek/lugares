@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             try {
                 val account = task.getResult(ApiException::class.java)!!
                 firebaseAuthWithGoogle(account.idToken!!);
-            } catch (e: ApiException){
+            } catch (e: ApiException) {
                 Log.d("Error API",e.toString())
             }
         }
